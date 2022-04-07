@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+::selection {
+    color: rgb(37, 36, 36);
+    background-color: hsla(150, 77%, 80%, 0.911);
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    font-family: "Manrope", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+main {
+    position: relative;
+    width: min(100% - 2rem, 400px);
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    padding: 15px 0 35px;
+    box-shadow: 3px 6px 14px 0 rgba(0, 0, 0, 0.253);
+}
+main .advice {
+    display: grid;
+    place-items: center;
+}
+main .advice #advice-id {
+    font-size: 13px;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+main .advice #advice-text {
+    width: min(100% - 5rem, 370px);
+    margin-inline: 0;
+    text-align: center;
+    font-size: 17px;
+    color: hsl(193, 38%, 86%);
+}
+
+main .advice img {
+    width: min(100% - 5rem, 370px);
+    margin-inline: 0;
+    margin: 10px 0;
+}
+
+main .advice-gen-btn {
+    position: absolute;
+    right: 40.5%;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+
+main .advice-gen-btn button {
+    width: 40px;
+    height: 40px;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+main .advice-gen-btn button:hover {
+    box-shadow: 0 0 14px 0px hsl(150, 100%, 66%);
+}
+button img {
+    width: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
